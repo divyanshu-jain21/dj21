@@ -1,0 +1,21 @@
+/* SocialIcons.css */
+
+.social-icons-container {
+  margin: 20px; /* Adjust the margin as needed */
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .social-icons-container {
+    display: block;
+  }
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-item {
+  margin: 0 10px; /* Adjust the margin as needed */
+}

@@ -1,0 +1,173 @@
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p {
+    margin: 0;
+    color: #555;
+  }
+
+  /* button css */
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  /* Icon */
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: calc(var(--icon-size) / 5);
+  margin-right: calc(var(--icon-size) / 5);
+  border-radius: calc(var(--icon-size) * var(--border-radius));
+  overflow: hidden;
+}
+
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: calc(var(--icon-size) * var(--border-radius));
+}
+
+.icon i {
+  position: relative;
+  color: var(--white);
+  font-size: calc(var(--icon-size) / 2);
+  margin-top: calc(var(--icon-size) / 4);
+  transition: all 0.25s ease;
+}
+
+/* Icon Fill */
+.icon-fill::before {
+  transition-duration: 0.5s;
+  box-shadow: inset 0 0 0 1px var(--green);
+}
+
+.icon-fill:hover::before {
+  box-shadow: inset 0 0 0 var(--icon-size) var(--green);
+}
+
+/* Icon Enter */
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px var(--orange);
+}
+
+.icon-enter::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 var(--icon-size) var(--orange);
+}
+
+.icon-enter:hover::before {
+  margin-left: 0;
+}
+
+/* Icon Expand */
+.icon-expand::after {
+  box-shadow: inset 0 0 0 1px var(--red);
+}
+
+.icon-expand::before {
+  background: var(--red);
+  box-shadow: inset 0 0 0 var(--icon-size) var(--background);
+}
+
+.icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px var(--background);
+}
+
+/* Icon Collapse */
+.icon-collapse::before {
+  border-radius: 0;
+}
+
+.icon-collapse:hover::before {
+  box-shadow:
+    inset 0 calc(var(--icon-size) / 2) 0 0 var(--green-l),
+    inset 0 calc(var(--icon-size) / -2) 0 0 var(--green-l);
+}
+
+.icon-collapse::after {
+  box-shadow: inset 0 0 0 1px var(--green-l);
+}
+
+/* Icon Rotate */
+.icon-rotate {
+  box-shadow: inset 0 0 0 1px var(--purple);
+}
+
+.icon-rotate::before,
+.icon-rotate::after {
+  border: 0px solid transparent;
+}
+
+.icon-rotate:hover::before {
+  transition:
+    border-top-width 0.3s ease,
+    border-top-color 0.3s ease;
+  border-width: var(--icon-size);
+  border-top-color: var(--purple);
+}
+
+.icon-rotate:hover::after {
+  transition:
+    border-left-width 0.3s ease,
+    border-left-color 0.3s ease;
+  border-width: var(--icon-size);
+  border-left-color: var(--purple);
+}
+
+.icon-rotate:hover {
+  transition: background 0.001s ease 0.3s;
+  background: var(--purple);
+}
+
+.icon-rotate i {
+  z-index: 1;
+}

@@ -1,0 +1,181 @@
+/* body {
+    margin: 0;
+    background-color: #2e2e31;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .containersss {
+    height: 100vh;
+    width: 100vw;
+    max-height: 600px;
+    max-width: 1200px;
+    min-height: 600px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  } */
+
+  .panelss {
+    height: 270px;
+    width: 190px;
+    position: relative;
+  }
+  
+  .panelss:hover .cardss {
+    filter: blur(1.5px);
+  }
+  
+  .panelss:hover .cards1 {
+    background-size: 215% 135%;
+  }
+  
+  .panelss:hover .cards2 {
+    background-size: 115% 115%;
+  }
+  
+  .panelss:hover .cards3 {
+    background-size: 155% 115%;
+  }
+  
+  .panelss:hover .titless {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .panelss:hover .borderss {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .panelss:hover .slidess {
+    bottom: 0px;
+  }
+  
+  .panelss:hover .ringss:before,
+  .panelss:hover .ringss:after {
+    transform: translateX(-50%) translateY(-50%) rotate(310deg);
+  }
+  
+  .ringss,
+  .cardss,
+  .borderss,
+  .slidess
+  /* .line  */
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ringss {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 170px;
+  }
+  
+  .cardss {
+    background: #cae7ef;
+    position: relative;
+    transition: all 1s;
+    height: 270px;
+    width: 270px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  /* .cards1 {
+    background-image: url("https://assets.codepen.io/489403/brazil.jpg");
+    background-repeat: no-repeat;
+    background-size: 200% 120%;
+  }
+  
+  .cards2 {
+    background-image: url("https://assets.codepen.io/489403/belize.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .cards3 {
+    background-image: url("https://assets.codepen.io/489403/egypt.jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  } */
+  
+  .ringss:before,
+  .ringss:after {
+    content: "";
+    padding: 0.7em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #50c9c3;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+  }
+  
+  .ringss:before {
+    border-color: rgb(236, 174, 49) rgb(236, 174, 49) rgba(142, 198, 230, 0)
+      rgba(132, 199, 231, 0);
+    z-index: -1;
+  }
+  
+  .ringss:after {
+    border-color: rgba(194, 152, 227, 0) rgba(133, 170, 222, 0)  rgb(236, 174, 49) rgb(236, 174, 49);
+  }
+  
+  .headp {
+    text-align: center;
+    align-items: center;
+
+    /* position: absolute; */
+    font-family: "Playfair Display";
+  }
+  
+  .titless {
+    font-size: 36px;
+    font-weight: 700;
+    transition: all 1s;
+    top: 0;
+  }
+  
+  .parass {
+    bottom: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .borderss {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 260px;
+    width: 260px;
+    transition: border 1s;
+    overflow: hidden;
+  }
+  
+  .slidess {
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: -270px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: bottom 1s;
+    flex-direction: column;
+  }
+  
+  /* .fa-plane {
+    font-size: 16px;
+  } */
+  

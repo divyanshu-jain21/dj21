@@ -1,0 +1,38 @@
+/* Add your styles here */
+.social-links-containers {
+  position: fixed;
+  top: 35%;
+  left: -170px;
+  display: none;
+  z-index: 1000;
+}
+
+.social-links {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.link-contents {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 180px;
+  padding: 8px;
+  background-color: #6b7280;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.link-contents:hover {
+  margin-left: 100px;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (min-width: 992px) {
+  .social-links-containers {
+    display: block;
+  }
+}

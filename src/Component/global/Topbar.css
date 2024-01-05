@@ -1,0 +1,38 @@
+.toplogoimg{
+    width: 70px;
+}
+
+/* Topbar.css */
+
+.navbar-nav {
+    margin-left: auto; /* Move the navbar links to the right */
+  }
+  
+  .nav-link {
+    color: #000; /* Set the default color of the links */
+    text-decoration: none;
+    position: relative; /* Position relative for pseudo-element positioning */
+  }
+  
+ 
+  .nav-link:hover {
+    color: #007bff; /* Set the text color to blue for on hover */
+  }
+  
+  .nav-link.active {
+    color: #007bff; /* Set the text color to blue for active */
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff; /* Set the underline color to blue */
+    transition: width 0.3s; /* Add the transition for the underline animation */
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%; /* Add the underline animation on hover and keep it for the active state */
+  }
+  

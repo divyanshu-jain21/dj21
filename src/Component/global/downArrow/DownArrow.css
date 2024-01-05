@@ -1,0 +1,50 @@
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.circle {
+  width: 80px; /* Adjust the size of the circle */
+  height: 80px; /* Adjust the size of the circle */
+  background-color: #f4c005;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: bounce 2s infinite alternate;
+}
+
+.arrow-icon {
+  color: #fff;
+  font-size: 36px; /* Adjust the size of the arrow */
+}
+
+.blinking-border {
+  position: absolute;
+  width: 100px; /* Adjust the size of the blinking border */
+  height: 100px; /* Adjust the size of the blinking border */
+  border: 2px dotted #f8e004;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+}

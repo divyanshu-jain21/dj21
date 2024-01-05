@@ -1,0 +1,22 @@
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 0%;
+    margin: 0%;
+    background: none;
+  }
+  .arrows{
+    background: none !important;
+  }
+  .back-to-top-button.visible {
+    opacity: 1;
+  }
+  
+  button {
+    /* padding: 10px; */
+    cursor: pointer;
+  }
+  
