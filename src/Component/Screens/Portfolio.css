@@ -1,47 +1,51 @@
 .txtshdw {
-  /* text-shadow: 3px 3px 3px  #000000; */
+  font-size: calc(2vw + 2vh);
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em blue, 0 0 0.2em blue;
-  /* text-shadow: rgb(4, 102, 248) 1px 0 10px; */
 }
 .portfoliobg {
   background-image: url(../Assets/background1.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
-. {
+/* . {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-}
+} */
 .frame {
-    width: 90%;
-    margin: 5px auto;
-    text-align: center;
-  }
-  button {
-    margin: 20px;
-  }
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
-  
-  /* 9 */
-  /* .btn-9 {
+  width: 90%;
+  margin: 5px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 9 */
+/* .btn-9 {
     border: none;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -74,10 +78,9 @@
       inset -4px -4px 6px 0 rgba(255,255,255,.5),
       inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
   } */
-  
-  
-  /* 12 */
-  /* .btn-12{
+
+/* 12 */
+/* .btn-12{
     position: relative;
     right: 50px;
     bottom: 20px;
@@ -147,5 +150,10 @@
     transform: rotateX(-90deg);
   }
    */
-  
-  
+
+/* image port css  */
+
+.gallery:hover {
+  /* border: 1px solid #777; */
+  box-shadow: 0 0 14px rgb(103, 210, 231);
+}

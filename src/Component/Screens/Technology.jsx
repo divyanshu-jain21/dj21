@@ -75,8 +75,8 @@ const Technology = () => {
         <div className="py-5">
           <div className="my-5 py-5">
             <div className="mb-5 py-5">
-              <div className=" py-5 text-center blureffect">
-                <font size="36" className="txtshdw">
+              <div className=" text-center blureffect">
+                <font className="txtshdw">
                   "Pioneering the Future of Software Innovation."
                 </font>
               </div>
@@ -104,23 +104,23 @@ const Technology = () => {
             <h2 className=" sectionPageHeading">
               Languages and Libraries :
             </h2>
-            <h3 className=" sectionPageHeading">Frontend:</h3>
+            <h3 className=" sectionPageHeading ">Frontend:</h3>
             <ul>
-              <li>
+              <li className="text-start">
                 JavaScript: At the heart of web development, JavaScript is the
                 foundational language, driving interactive and dynamic user
                 experiences.
               </li>
-              <li>
+              <li className="text-start">
                 EcmaScript: The standardized scripting language that underlies
                 JavaScript, ensuring consistency and compatibility across
                 different environments.
               </li>
-              <li>
+              <li className="text-start">
                 HTML: The markup language that structures and organizes content
                 on the web, providing the foundation for web pages.
               </li>
-              <li>
+                      <li className="text-start">
                 ReactJS: Leveraging the power of JavaScript, ReactJS emerges as
                 a popular library for crafting efficient user interfaces and
                 reusable UI components.
@@ -128,34 +128,34 @@ const Technology = () => {
             </ul>
             <h3 className=" sectionPageHeading">Backend:</h3>
             <ul>
-              <li>
+                      <li className="text-start">
                 Python: A versatile and high-level programming language, Python
                 seamlessly integrates into backend development, offering
                 readability and flexibility.
               </li>
-              <li>
+                      <li className="text-start">
                 Node.js: Description: Node.js is a JavaScript runtime built on
                 the V8 JavaScript engine. It allows developers to run JavaScript
                 on the server side, enabling the development of scalable and
                 fast network applications.
               </li>
-              <li>
+                      <li className="text-start">
                 Java: Description: Java is a general-purpose, object-oriented
                 programming language known for its portability and wide
                 adoption.
               </li>
 
-              <li>
+                      <li className="text-start">
                 SQL / MySQL: Essential for database management, SQL (Structured
                 Query Language) and MySQL enable the storage and retrieval of
                 structured data.
               </li>
-              <li>
+                      <li className="text-start">
                 Unix / Linux: Operating systems like Unix and Linux serve as
                 reliable environments for deploying web applications, ensuring
                 stability and security.
               </li>
-              <li>
+                      <li className="text-start">
                 MongoDB: Description: MongoDB is a NoSQL database that stores
                 data in flexible, JSON-like documents. It is known for its
                 scalability, flexibility, and ease of use.
@@ -171,23 +171,23 @@ const Technology = () => {
             </h3>
             <hr></hr>
             <ul>
-              <li>
+                      <li className="text-start">
                 CSS: The styling language that transforms web content, CSS
                 provides the means to create visually captivating layouts.
               </li>
-              <li>
+                      <li className="text-start">
                 Bootstrap: A front-end framework, Bootstrap simplifies the
                 development of responsive and visually appealing designs.
               </li>
-              <li>
+                      <li className="text-start">
                 Material-UI: Built for React, Material-UI implements Google's
                 Material Design, offering a sleek and consistent look and feel.
               </li>
-              <li>
+                      <li className="text-start">
                 MD-Bootstrap: A Material Design adaptation of the Bootstrap
                 framework, combining the strengths of both design philosophies.
               </li>
-              <li>
+                      <li className="text-start">
                 React-Bootstrap: Seamlessly integrating Bootstrap with React
                 components, React-Bootstrap facilitates the creation of
                 responsive user interfaces.
@@ -202,7 +202,7 @@ const Technology = () => {
         </h3> */}
             <hr></hr>
             <ul>
-              <li>
+                      <li className="text-start">
                 NPM (Node Package Module): As the package manager for JavaScript
                 and Node.js, NPM streamlines the process of managing project
                 dependencies, ensuring efficient development workflows.
@@ -220,7 +220,7 @@ const Technology = () => {
             </h3>
             <hr></hr>
             <ul>
-              <li>
+                      <li className="text-start">
                 Git, GitHub, GitLab, BitBucket: These platforms provide version
                 control capabilities, enabling teams to collaborate on code,
                 manage changes, and store repositories effectively.
@@ -235,15 +235,15 @@ const Technology = () => {
               involves various testing methodologies: <hr></hr>
             </h3>
             <ul>
-              <li>
+                      <li className="text-start">
                 Manual Testing: Thoroughly testing software manually to identify
                 and address defects.
               </li>
-              <li>
+                      <li className="text-start">
                 Functional Testing: Validating that the software meets its
                 intended functionality.
               </li>
-              <li>
+                      <li className="text-start">
                 Regression Testing: Ensuring that new code changes do not
                 adversely impact existing functionality.
               </li>
@@ -258,7 +258,7 @@ const Technology = () => {
             </h3> */}
             <hr></hr>
             <ul>
-              <li>
+                      <li className="text-start">
                 Postman: A versatile tool for testing APIs, Postman facilitates
                 the sending of requests and receiving of responses, ensuring API
                 functionality and reliability.
@@ -274,7 +274,7 @@ const Technology = () => {
             </h3> */}
             <hr></hr>
             <ul>
-              <li>
+            <li className="text-start">
                 Windows and Linux: Familiarity with these two common operating
                 systems is essential for developers, offering flexibility in
                 choosing environments.
@@ -293,10 +293,10 @@ const Technology = () => {
             </h3>
             <hr></hr>
             <ul>
-              <li>
+                      <li className="text-start">
               Visual Studio Code (VS Code): A popular code editor for writing and debugging code, offering a lightweight yet powerful environment 
               </li>
-              <li>
+                      <li className="text-start">
               Jira: A comprehensive project management and issue tracking tool, Jira is often utilized in software development for streamlined project workflows. 
               </li>
             </ul>

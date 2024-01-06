@@ -4,7 +4,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
 
+}
+.txtshdw {
+  font-size: calc(2vw + 2vh);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em blue, 0 0 0.2em blue;
+  /* text-shadow: rgb(4, 102, 248) 1px 0 10px; */
 }
 .contactIcon{
     font-size: 30px;

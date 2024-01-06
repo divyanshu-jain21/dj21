@@ -90,8 +90,8 @@ const Contact = () => {
         <div className="py-5">
           <div className="my-5 py-5">
             <div className="mb-5 py-5">
-              <div className=" py-5 text-center blureffect">
-                <font size="36" className="txtshdw text-light">
+              <div className="text-center blureffect">
+                <font className="txtshdw text-light">
                   "Expert IT solutions for Your business."
                 </font>
               </div>

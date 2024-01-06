@@ -46,20 +46,20 @@ const Portfolio = () => {
     paddingTop: "1.5rem",
   };
 
-  const portfolioItemStyle = {
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    borderRadius: "8px",
-    flex: "0 0 calc(50% - 16px)", // Three items in a row with some margin
-    margin: "8px",
-    transition: "transform 0.2s ease-in-out",
-    // background: "black",
-  };
+  // const portfolioItemStyle = {
+  //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  //   borderRadius: "8px",
+  //   flex: "0 0 calc(50% - 16px)", // Three items in a row with some margin
+  //   margin: "8px",
+  //   transition: "transform 0.2s ease-in-out",
+  //   background: "black",
+  // };
 
-  const imageStyle = {
-    width: "100%",
-    height: "auto", // Make sure the height adjusts accordingly
-    borderRadius: "8px",
-  };
+  // const imageStyle = {
+  //   width: "100%",
+  //   height: "auto", // Make sure the height adjusts accordingly
+  //   borderRadius: "8px",
+  // };
 
   const buttonContainerStyle = {
     display: "flex",
@@ -81,8 +81,8 @@ const Portfolio = () => {
         <div className="py-5">
           <div className="my-5 py-5">
             <div className="mb-5 py-5">
-              <div className=" py-5 text-center blureffect">
-                <font size="36" className="txtshdw">
+              <div className="text-center blureffect">
+                <font className="txtshdw">
                   "Building Digital Dreams, Delivering Technological Triumphs."
                 </font>
               </div>
@@ -92,48 +92,41 @@ const Portfolio = () => {
         </div>
       </section>
       <div style={contentContainerStyle} className="text-center mt-3 mx-5 px-5">
-        {/* <div className="max-w-screen-lg mx-auto flex flex-col justify-center"> */}
         <div style={headingStyle} className="sectionPageHeading">
           Portfolio
         </div>
-        <p style={paragraphStyle} className="text-center   sectionPageHeading my-3">
+        <p
+          style={paragraphStyle}
+          className="text-center   sectionPageHeading my-3"
+        >
           We work closely with our clients to understand their unique needs and
-          develop customized solutions that meet those needs.<br/> Our agile
-          development process ensures that our clients are involved every step
-          of the way.
+          develop customized solutions that meet those needs.
+          <br /> Our agile development process ensures that our clients are
+          involved every step of the way.
         </p>
         <p style={paragraphStyle} className="text-center">
           Check out some of my work right here
         </p>
-        <div className="flex row mt-2">
+        <div className="row mt-2">
           {portfolios.map(({ id, src }) => (
-            <div
-              key={id}
-              style={portfolioItemStyle}
-              className="col m-2 p-2 blureffect shadow"
-            >
-              <img
-                src={src}
-                alt=""
-                style={imageStyle}
-                className="rounded duration-200 hover:scale-105"
-              />
-              {/* <div className="frame">
-                <button className="custom-btn btn-12">
-                  <span>Click!</span>
-                  <span>Demo</span>
-                </button> */}
-                {/* <button className="custom-btn btn-9">Code</button> */}
-                {/* <button className="custom-btn btn-12">
-                  <span>Click!</span>
-                  <span>code</span>
-                </button> */}
-              {/* </div> */}
-              {/* <div style={buttonContainerStyle}>
-                <button style={buttonStyle}>Demo</button>
-                <button style={buttonStyle}>Code</button>
-              </div> */}
-            </div>
+             
+         
+                <div  key={id} className="col-sm-6 col-md-4 mb-3 gallery">
+                  <img
+                    src={src}
+                    alt=""
+                    className="fluid img-thumbnail"
+                  />
+                </div>
+         
+
+              // {/* <img
+              //   src={src}
+              //   alt=""
+              //   style={imageStyle}
+              //   className="rounded duration-200 hover:scale-105"
+              // /> */}
+             
           ))}
         </div>
       </div>

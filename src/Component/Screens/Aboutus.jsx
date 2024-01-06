@@ -15,6 +15,7 @@ import t4 from "../Assets/reviewUser/dj.png";
 import DownArrow from "../global/downArrow/DownArrow";
 
 import "./Aboutus.css";
+import Mentorss from "./mentor/Mentorss";
 
 // Define styles as objects
 const containerStyle = {
@@ -56,7 +57,7 @@ function Aboutus() {
           <div className="my-5 py-5">
             <div className="mb-5 py-5">
               <div className=" text-center blureffect">
-                <font size="36" className="txtshdw">
+                <font className="txtshdw">
                   "Expert IT solutions for Your business."
                 </font>
               </div>
@@ -119,7 +120,8 @@ function Aboutus() {
 
       {/* --------------our mentor--------------  */}
       <section className="mb-3 mx-5 px-5">
-        <div className="text-center m-4">
+        <Mentorss/>
+        {/* <div className="text-center m-4">
           <h2 className="text-center sectionPageHeading">
             Our Mentor's <br />
           </h2>
@@ -218,125 +220,9 @@ function Aboutus() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
-      {/* -----  */}
-      {/* <section className="mb-3 mx-5 px-5">
-        <div className="text-center m-4">
-          <h2 className="text-center sectionPageHeading">
-            Our Mentor's <br />
-          </h2>
-          <p className="text-center   sectionPageHeading">
-            Meet our exceptional mentors who are CEOs, directors, entrepreneurs,
-            and distinguished leaders in their respective fields. They bring a
-            wealth of experience and expertise to guide and inspire us on our
-            journey.
-          </p>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img src={m1} className="img-fluid" alt="Tanmay Akolkar" />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">
-                      Tanmay Akolkar
-                    </h5>
-                    <p className="card-text m-2">
-                      <em>Founder of Z&T Infotech</em>
-                    </p>
-                    <p className="m-2">
-                      <small>
-                        10+ year Experienced in Fullstack development with Java,
-                        Python, React, JAvaScript and more..
-                      </small>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    src={m2}
-                    className="img-fluid rounded-start"
-                    alt="Tanmay Akolkar"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">Nikhil Jain</h5>
-                    <p className="card-text m-2">
-                      <em>Founder of Sans Web Solutions</em>
-                    </p>
-                    <p className="m-2">
-                      <small>
-                        6+ year Experienced in Fullstack development with React
-                        JS, Node JS technologies.
-                      </small>
-                    </p>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    src={m3}
-                    className="img-fluid rounded-start"
-                    alt="Shani Diwakar"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">
-                      Shani Diwakar
-                    </h5>
-                    <p className="card-text m-2">
-                      <em>CTO of Sans Web Solutions</em>
-                    </p>
-                    <p className="m-2">
-                      <small>
-                        5+ year Experienced in iOS/Android development with
-                        React-native, Angular & JavaScript and more..
-                      </small>
-                    </p>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img src={m4} className="img-fluid rounded-start" alt="" />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">Aditya Jain</h5>
-                 
-
-                    <small>
-                      6+ Experience in Backend Development
-                      <br />
-                      Expertise: Low-level Design & System Design
-                    </small>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       {/* -------------Our team member-------------- */}
 
@@ -353,8 +239,8 @@ function Aboutus() {
         </div>
         {/* --------------------------------- */}
 
-        <div className="card-group m-4 p-3">
-          <div className="card  h-100 blureffect align-items-center d-flex justify-content-center">
+        <div className="card-group m-4 p-3 row d-flex justify-content-center">
+          <div className="col-sm-12 col-md-5 col-lg-5 m-2 p-2 blureffect align-items-center d-flex justify-content-center">
             <img
               className="imagesmember imgclr1 text-center "
               src={t1}
@@ -373,7 +259,7 @@ function Aboutus() {
               </p> */}
             </div>
           </div>
-          <div className="card  h-100 blureffect align-items-center d-flex justify-content-center">
+          <div className="col-sm-12 col-md-5 col-lg-5 m-2 p-2 blureffect align-items-center d-flex justify-content-center">
             <img className="imagesmember imgclr2" src={t2} alt="..." />{" "}
             <div className="card-body">
               <h5 className="card-title sectionPageHeading">Aman Kushwah</h5>{" "}
@@ -388,7 +274,7 @@ function Aboutus() {
               </p> */}
             </div>
           </div>
-          <div className="card  h-100 blureffect align-items-center d-flex justify-content-center">
+          <div className="col-sm-12 col-md-5 col-lg-5 m-2 p-2 blureffect align-items-center d-flex justify-content-center">
             <img className="imagesmember imgclr3" src={t3} alt="..." />{" "}
             <div className="card-body">
               <h5 className="card-title sectionPageHeading">Aditya Jain</h5>
@@ -403,7 +289,7 @@ function Aboutus() {
               </p> */}
             </div>
           </div>
-          <div className="card  h-100 blureffect align-items-center d-flex justify-content-center">
+          <div className="col-sm-12 col-md-5 col-lg-5 m-2 p-2 blureffect align-items-center d-flex justify-content-center">
             <img className="imagesmember imgclr4" src={t4} alt="..." />{" "}
             <div className="card-body">
               <h5 className="card-title sectionPageHeading">Divyanshu Jain</h5>
@@ -421,112 +307,7 @@ function Aboutus() {
         </div>
 
         {/* -------------------- */}
-        {/* <div className="container">
-          <div className="row">
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="card-img-top rounded-pill"
-                    src={t1}
-                    alt="Card image cap"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">
-                      Puneet Tamrakar
-                    </h5>
-                    <p className="card-text sectionPageHeading">
-                      <small>
-                        <li> 4+ year Experienced in Animation & Designing.</li>
-                        <li> Creative Lead</li>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="imagesmember"
-                    src={t2}
-                    style={{ color: "#BD1550" }}
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">
-                      Aman Kushwah
-                    </h5>
-                    <p className="card-text sectionPageHeading">
-                      <small>
-                        <li> 2+ year Experienced in full-stack development.</li>
-                        <li>Skills: React.js, Nodejs, Mongodb, javascript..</li>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="card-img-top rounded-pill"
-                    src={t3}
-                    alt="Card image cap"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">Aditya Jain</h5>
-                    <p className="card-text sectionPageHeading">
-                      <small>
-                        <li>
-                          Highly skilled Python Developer with 3+ years of
-                          experience in developing, and maintaining robust &
-                          Multiple frameworks.
-                        </li>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className=" col card mb-3 blureffect shadow">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="card-img-top rounded-pill"
-                    src={t4}
-                    alt="Card image cap"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary m-2">
-                      Divyanshu Jain
-                    </h5>
-                    <p className="card-text sectionPageHeading">
-                      <small>
-                        <li> 2+ year Experienced in full-stack development.</li>
-                        <li>
-                          Skills: React.js, Python, Sql, javascript, AWS,
-                          Unix/Linux
-                        </li>
-                      </small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        
       </section>
 
       <div className="mx-4 px-4">
