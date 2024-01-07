@@ -17,6 +17,7 @@
     "mdbootstrap": "^4.20.0",
     "react": "^18.2.0",
     "react-accessible-accordion": "^5.0.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

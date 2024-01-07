@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home1 from './Component/Screens/Home1';
 import Contact from './Component/Screens/Contact';
 import Technology from './Component/Screens/Technology';
@@ -12,12 +12,12 @@ import Bottoms from './Component/Screens/bottomToTop/Bottoms';
 
 function App() {
   return (
-    <Router>
+<Router basename="divyanshu-jain21/dj21">
       <Topbar />
       <SocialLink />
       <Routes>
         {/* Home page is set as the default route */}
-        <Route path="/" element={<Home1 />} />
+        <Route path="./" element={<Home1 />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about-us" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
