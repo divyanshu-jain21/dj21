@@ -17,17 +17,17 @@ const SocialLink = () => {
           LinkedIn <FaLinkedin size={30} className="ms-3"/>
         </>
       ),
-      href: "",
+      href: "www.linkedin.com/in/vinitika-infotech-665a932a8",
     },
-    {
-      id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} className="ms-3" />
-        </>
-      ),
-      href: "",
-    },
+    // {
+    //   id: 2,
+    //   child: (
+    //     <>
+    //       GitHub <FaGithub size={30} className="ms-3" />
+    //     </>
+    //   ),
+    //   href: "",
+    // },
     {
       id: 3,
       child: (
@@ -35,27 +35,27 @@ const SocialLink = () => {
           Mail <FaEnvelope size={30}className="ms-3" />
         </>
       ),
-      href: "mailto:vinitikainfotech@gmail.com",
+      href: "mailto:infotechvnit@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Instagram <FaInstagramSquare size={30} className="ms-3"/>
-        </>
-      ),
-      href: "",
-    },
-    {
-      id: 5,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} className="ms-3" />
-        </>
-      ),
-      href: "",
-      download: true,
-    },
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       Instagram <FaInstagramSquare size={30} className="ms-3"/>
+    //     </>
+    //   ),
+    //   href: "",
+    // },
+    // {
+    //   id: 5,
+    //   child: (
+    //     <>
+    //       Resume <BsFillPersonLinesFill size={30} className="ms-3" />
+    //     </>
+    //   ),
+    //   href: "",
+    //   download: true,
+    // },
   ];
 
   return (
