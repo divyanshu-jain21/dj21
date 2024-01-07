@@ -21,7 +21,7 @@ function App() {
     <SocialLink/>
       <Routes>
       <Route path="/" element={<Home1/>} />
-      <Route path="/home/VIT:Vinitika-Infotech" element={<Home1/>} />
+      <Route path="/home/VIT:Vinitika-Infotech" active element={<Home1/>} />
       <Route path="/portfolio/VIT:Vinitika-Infotech" element={<Portfolio/>} />
       <Route path="/about-us/VIT:Vinitika-Infotech" element={<Aboutus/>} />
       <Route path="/contact/VIT:Vinitika-Infotech" element={<Contact/>} />
