@@ -33,7 +33,7 @@ function Topbar() {
           <hr></hr>
           <hr></hr>
           <NavLink
-            to="/home/VIT:Vinitika-Infotech"
+            to="/"
             className="nav-link"
             activeClassName="active"
             onClick={handleNavItemClick}

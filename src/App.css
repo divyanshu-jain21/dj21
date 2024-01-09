@@ -11,7 +11,7 @@ body{
 
 .blureffect{
   backdrop-filter: blur(5px);
-  background: rgba(213, 228, 238, 0.625);
+  background: rgba(213, 228, 238, 0.218);
   padding: 10px;
 }
 

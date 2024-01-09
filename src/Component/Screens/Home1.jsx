@@ -26,7 +26,7 @@ function Home1() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className=" mx-5 px-5">
       {/* -----------------logo---------------- */}
       <section>
         <div id="box"></div>
@@ -90,65 +90,41 @@ function Home1() {
           our administrations that<br></br> covers each part of eCommerce
           development guaranteeing conveyance of substantial business results.
         </p>
-        <div className="row23">
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="column23">
-                  <div className="card23  blureffect shadow">
-                    <h5 className="">Mobile Apps Solutions</h5>
-                    <hr></hr>
-                    <p className="">
-                      Our team of experts is dedicated to building custom mobile
+        <div className="row mt-5">
+            
+            <div className="col-12 col-md-12 col-lg-6 col-xl-6 mt-2">
+              {/* <h2 className="text-primary">About VITS</h2> */}
+              <p className="blureffect   sectionPageHeading">
+                <h3 className=" sectionPageHeading mt-3">Mobile Apps Solutions</h3>
+                <hr></hr>
+                Our team of experts is dedicated to building custom mobile
                       app solutions for iOS, Android by utilising latest
                       technologies to solve unique and challenging business
                       problems.
-                    </p>
-                  </div>
-                </div>
-                <div className="column23">
-                  <div className="card23  blureffect shadow">
-                    <h5 className="">Web Application solutions</h5>
-                    <hr></hr>
-                    <p className="">
-                      Creative web solutions blended with latest technologies
+                <h3 className=" sectionPageHeading mt-3">
+                Web Application solutions
+                </h3>
+                <hr></hr>
+                Creative web solutions blended with latest technologies
                       form the right base for innovative businesses. At sws, our
                       focus is on building and delivering excellence at each
                       level.
-                    </p>
-                  </div>
-                </div>
-                <div className="column23">
-                  <div className="card23 h-50  blureffect shadow">
-                    <h5 className="">Website Design solutions</h5>
-                    <hr></hr>
-                    <p className="">
-                      We believe that the look of a website or mobile app is as
+                <h3 className=" sectionPageHeading mt-3">Website Design solutions</h3>
+                <hr></hr>
+                We believe that the look of a website or mobile app is as
                       important as it’s functioning. We provide the soul to
                       every project with blueprints that reflect originality.
-                    </p>
-                  </div>
-                </div>
-                <div className="column23">
-                  <div className="card23  blureffect shadow">
-                    <h5 className="">Animation & Graphic Designing</h5>
-                    <hr></hr>
-                    <p className=" ">
-                      We specialize in implementing strategic approaches to
+                <h3 className=" sectionPageHeading mt-3">Animation & Graphic Designing</h3>
+                <hr></hr>
+                We specialize in implementing strategic approaches to
                       enhance website traffic by crafting compelling static
                       visual content and dynamic moving images.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div className="column-12 column-md-12 column-lg-6 column-xl-6 m-2 p-2">
-                  <img src={ourservice} className="d-block w-100" alt="..." />
-                </div>
-              </div>
+              </p>
+            </div>
+            <div className="col-12 col-md-12 col-lg-6 col-xl-6">
+              <img src={ourservice} className="d-block w-100" alt="..." />
             </div>
           </div>
-        </div>
       </section>
       <hr></hr>
       {/* ----------------keys------------------ */}
