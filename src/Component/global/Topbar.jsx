@@ -22,7 +22,7 @@ function Topbar() {
       expanded={expanded}
       onToggle={() => setExpanded(!expanded)}
     >
-      <NavLink to="/home/VIT:Vinitika-Infotech">
+      <NavLink to="/">
         <Navbar.Brand href="#home">
           <img src={logo} className="toplogoimg" alt="Logo" />
         </Navbar.Brand>
