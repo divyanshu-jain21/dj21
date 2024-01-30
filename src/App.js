@@ -17,26 +17,13 @@ function App() {
   return (
     <>
       {
-        function getFee(isWindow) {
+        function getScrData(isWindow) {
           return isWindow ?
             <div>
-              <BrowserRouter>
-
-                <Topbar />
-                <Home1 />
-                <SocialLink />
-                {/* <Routes>
-                  <Route path="/" element={<Home1 />} />
-                  <Route path="/home/VIT:Vinitika-Infotech" element={<Home1 />} />
-                  <Route path="/portfolio/VIT:Vinitika-Infotech" element={<Portfolio />} />
-                  <Route path="/about-us/VIT:Vinitika-Infotech" element={<Aboutus />} />
-                  <Route path="/contact/VIT:Vinitika-Infotech" element={<Contact />} />
-                  <Route path="/technology/VIT:Vinitika-Infotech" element={<Technology />} />
-                </Routes> */}
-              </BrowserRouter>
-              {/* <ChatBot1/> */}
+              <Topbar />
+              <Home1 />
+              <SocialLink />
               <Bottoms />
-
               <Footbar1 />
             </div>
             :
@@ -47,6 +34,7 @@ function App() {
                 {/* <Home1 /> */}
                 <SocialLink />
                 <Routes>
+                  <Route path="/" element={<Home1 />} />
                   <Route path="/home/VIT:Vinitika-Infotech" element={<Home1 />} />
                   <Route path="/portfolio/VIT:Vinitika-Infotech" element={<Portfolio />} />
                   <Route path="/about-us/VIT:Vinitika-Infotech" element={<Aboutus />} />
