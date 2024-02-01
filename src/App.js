@@ -1,5 +1,5 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import Home1 from './Component/Screens/Home1';
 import Contact from './Component/Screens/Contact';
 import Technology from './Component/Screens/Technology';
@@ -11,44 +11,29 @@ import Aboutus from './Component/Screens/Aboutus';
 import Bottoms from './Component/Screens/bottomToTop/Bottoms';
 // import ChatBot1 from './Component/Screens/Chatbot1';
 
-
-
 function App() {
   return (
     <>
-      {
-        function getScrData(isWindow) {
-          return isWindow ?
-            <div>
-              <Topbar />
-              <Home1 />
-              <SocialLink />
-              <Bottoms />
-              <Footbar1 />
-            </div>
-            :
-            <div>
-              <BrowserRouter>
-
-                <Topbar />
-                {/* <Home1 /> */}
-                <SocialLink />
-                <Routes>
-                  <Route path="/" element={<Home1 />} />
-                  <Route path="/home/VIT:Vinitika-Infotech" element={<Home1 />} />
-                  <Route path="/portfolio/VIT:Vinitika-Infotech" element={<Portfolio />} />
-                  <Route path="/about-us/VIT:Vinitika-Infotech" element={<Aboutus />} />
-                  <Route path="/contact/VIT:Vinitika-Infotech" element={<Contact />} />
-                  <Route path="/technology/VIT:Vinitika-Infotech" element={<Technology />} />
-                </Routes>
-              </BrowserRouter>
-              {/* <ChatBot1/> */}
-              <Bottoms />
-
-              <Footbar1 />
-            </div>;
-        }
-      }
+      <div>
+        {/* Use HashRouter for GitHub Pages */}
+        <HashRouter basename={process.env.PUBLIC_URL}>
+          <Topbar />
+          {/* <Home1 /> */}
+          <SocialLink />
+          <Routes>
+            {/* Add a catch-all route for GitHub Pages */}
+            <Route path="*" element={<Home1 />} />
+            <Route path="/home/VIT:Vinitika-Infotech" element={<Home1 />} />
+            <Route path="/portfolio/VIT:Vinitika-Infotech" element={<Portfolio />} />
+            <Route path="/about-us/VIT:Vinitika-Infotech" element={<Aboutus />} />
+            <Route path="/contact/VIT:Vinitika-Infotech" element={<Contact />} />
+            <Route path="/technology/VIT:Vinitika-Infotech" element={<Technology />} />
+          </Routes>
+        </HashRouter>
+        {/* <ChatBot1/> */}
+        <Bottoms />
+        <Footbar1 />
+      </div>;
     </>
   );
 }
